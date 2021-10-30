@@ -15,7 +15,7 @@ Our topic of choice is COVID-19 data exploration.
 
 ## ✓ Reason why they selected their topic
 
-We took a series of polls, and COVID-19 was the most voted for subject. In the final 3 topics it was voted by consensus. But, in all seriousness, COVID has been one of, if not the single, most significant events of the last year. It reshaped, not only American society, but most countries across the world.
+We took a series of polls, and COVID-19 was the most voted for subject. In the final round it was voted for by consensus. But, in all seriousness, COVID has been one of, if not the single, most significant events of the last year. It reshaped, not only American society, but most countries across the world. Not only was it a significant event, but the disease continues to affect American society. By exploring what factors predict cases and deaths, we can learn more about what would bring this awful chapter to a close.
 
 ## ✓ Description of their source of data
 
