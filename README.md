@@ -1,8 +1,10 @@
 # project-one
 
-Description of Communication Protocols: [Drew goes here]
+## Description of Communication Protocols: 
 
+### [Drew goes here]
 
+-----------------------------------------------------
 Presentation/X: Mitchell 1st, Dan 2nd
 
 Github/ Square: Drew 1st, Sarah 2nd
