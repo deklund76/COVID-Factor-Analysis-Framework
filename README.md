@@ -14,6 +14,15 @@ Presentation/X: Mitchell 1st, Dan 2nd
 Github/ Square: Drew 1st, Sarah 2nd
 
 Machine Learning/ Triangle: Dan 1st, Drew 2nd
+## Machine Learning Update
+
+* Put together a prototype neural network which was functional with a small sample of the "Vaccinations" database.
+
+* Put together a script to clean the "Cases and Deaths" database.  It still needs work but significant progress has been made.
+
+* Tried decision tree machine models on the "Cases and Deaths" database.  This is how I became aware of a correction needed to the cleaning script.  The cleaning script includes a column for labels to be used in the machine learning programs and this column is being worked on.
+
+
 
 Database/ Circle: Sarah 1st, Mitchell 2nd
 
