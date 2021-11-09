@@ -1,4 +1,4 @@
-**### DRAFT**
+### DRAFT
 
 # Random Forest Model
 
@@ -6,15 +6,15 @@ The random forest model uses bootstrap samples and an ensemble of decision trees
 
 ## Questions to be Answered
 
- 1. What features contribute most to being classified as above or below average over 2020?
+ 1. What features contribute most to being classified as above or below average over 2020?<br>
     (average of total cases and of total deaths)
 
- 2. What features contribute most to being classified as above or below average over both 2020 and 2021?
+ 2. What features contribute most to being classified as above or below average over both 2020 and 2021?<br>
     (average of total cases and of total deaths)
 
  3. What are the differences?
 
- 4. If the number of features is reduced, what do the differnces look like?
+ 4. If the number of features is reduced, what do the differences look like?
 
 
 ## Reasons for choosing the model
@@ -24,7 +24,6 @@ The random forest model uses bootstrap samples and an ensemble of decision trees
 1.  Provides importances of features
 
 2.  Variance is reduced by introducing randomness with replacement which improves the model's fit
-    sometimes a slight increase in bias may occur
 
 3.  Datasets are sufficiently large for this approach
 
@@ -36,7 +35,9 @@ The random forest model uses bootstrap samples and an ensemble of decision trees
 
 1.  It may not always be able to ascertain why a random forest makes its decision.  Altough sklearn provides       feature importances, their limitations should be considered: <br>
 
->"The impurity-based feature importances computed on tree-based models suffer from two flaws that can lead to misleading conclusions. First they are computed on statistics derived from the training dataset and therefore do not necessarily inform us on which features are most important to make good predictions on held-out dataset. Secondly, they favor high cardinality features, that is features with many unique values." (sklearn)
+> "The impurity-based feature importances computed on tree-based models suffer from two flaws that can lead to misleading conclusions. First they are computed on statistics derived from the training dataset and therefore do not necessarily inform us on which features are most important to make good predictions on held-out dataset. Secondly, they favor high cardinality features, that is features with many unique values." (sklearn)
+
+2. Sometimes a slight increase in bias may occur
 
 ### Setting up the Analysis
 
@@ -47,6 +48,7 @@ Database:  *United_States_COVID-19_Cases_and_Deaths_by_State_over_Time.csv*
 - Use the yearly statistics from this database in the analysis of other features in the vax_cases_death.csv database
 
 - Database features are the new cases and the new deaths from COVID-19 and the states
+- Label columns are based on the means for the year 2020 and the means for the years 2020 and 2021 combined 
 
 Database *vax_cases_death.csv*
 
@@ -55,15 +57,15 @@ Database *vax_cases_death.csv*
 - Possibly explore additional features.
 
 - Database features are the distributions, the administrations, and the states
+- Label columns are based on the means for the year 2020 and the means for the years 2020 and 2021 combined (from database United_States_COVID-19_Cases_and_Deaths_by_State_over_Time.csv)
+
 
 Imbalance:  *note that the classier set (labels) is NOT imbalanced*
 
 
 ## Finding the optimal model
 
-According to sklearn,the scikit-learn implementation differs from the original random forest conceptualization of each sample-sized decision tree voting for the best outcome.  In scikit-learn the ensemble learners outcome is averaged.  It is known that individual decision trees typically have high variance which caused overfittig.  The algorithm of voting or averaging tends to reduce the variance so that the randpm forest trees are less likely overfit the data.  By assessing the model results, parameters can be found which provide a predictive fit rather than an overfit. The model parameters which are explored here to find an optimal model.  
-
-Parameter names used in the random forest arguments are:<br><br>
+According to sklearn,the scikit-learn implementation differs from the original random forest conceptualization of each sample-sized decision tree voting for the best outcome.  In scikit-learn the ensemble learners outcome is averaged.  It is known that individual decision trees typically have high variance which cause overfitting.  The random forest algorithms of either voting or averaging tends to reduce the variance so that the randpm forest trees are less likely overfit the data.  By assessing the model results, parameters can be found which provide a predictive fit rather than an overfit. The model parameters which are explored to find an optimal model are as follows:<br>
 
 n_estimators=128<br>
 random_state=78<br>
@@ -71,7 +73,7 @@ criterion = 'gini' or 'entropy'<br>
 max_depth = None or 10<br>
 max_features = 'auto' or 'sqrt'<br>
 min_impurity_decrease = 0.0 or a fraction<br>
-oob_score = False or True<br>
+oob_score = False or True<br><br><br>
 
 **Table:  Parameter Evaluations to Find an Optimal Model**<br>
 
@@ -96,6 +98,7 @@ oob_score = False or True<br>
 |  16  |  128  |  78  |  entropy  |  None  |  'sqrt'  |  0.5  |  False  |  
 |  17 |  128  |  78  |  entropy  |  None  |  'sqrt'  |  0.5  |  True  |  
 
+<br><br>
 
 ## Model Evaluation
 
@@ -112,7 +115,7 @@ These means are used for feature analyses with both the United_States_COVID-19_C
 
 ## Model Results
 
-The model results are read into a PostgreSQL database for helping in analysis and presentations.
+The model results are read into a PostgreSQL database for helping in analysis and presentations.<br>
 
 
 ## Displays of Results
