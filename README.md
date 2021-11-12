@@ -46,3 +46,18 @@ We hope to create two machine learning models, one for cases and one for deaths 
 ## Database Pipeline Demystification:
 
 The data is being downloaded from the CDC website into a PostGRES database, being managed by Sarah. From there, Sarah writes SQL code to perform joins, merges, and cleaning. The PostGRES database is connected to an Amazon Web Services database, and the csv files are stored in an S3 bucket. From there, the data cleaning script reads in those csv files using PySpark, which are then cleaned, and fed to the machine learning modeling script.
+
+------------------------------------------------------------------------------------------------------------------------
+# Segment Two: Exploratory Analysis
+
+## Drew is Scraping Gender Data
+Expand
+
+## Sarah is merging data sets, and importing Drew's Data
+Expand on details here
+
+## Dan is cleaning the updated database, and updating the model
+
+-----------------------------------------------------------------------------------------------------------------------------
+Google Slides link: (anyone with access can edit)
+https://docs.google.com/presentation/d/1Eti-Xp3HtNmAY58WrW7OXlPTRSwAcABQasO9jw3a4Ng/edit#slide=id.p
