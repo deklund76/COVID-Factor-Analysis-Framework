@@ -57,3 +57,7 @@ Expand
 Expand on details here
 
 ## Dan is cleaning the updated database, and updating the model
+
+-----------------------------------------------------------------------------------------------------------------------------
+Google Slides link: (anyone with access can edit)
+https://docs.google.com/presentation/d/1Eti-Xp3HtNmAY58WrW7OXlPTRSwAcABQasO9jw3a4Ng/edit#slide=id.p
