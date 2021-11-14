@@ -6,10 +6,10 @@ The random forest model uses bootstrap samples and an ensemble of decision trees
 
 ## Questions to be Answered
 
- 1. What features contribute most to being classified as above or below average over 2020?<br>
+ 1. What features contribute most to being classified as above or below average of the year 2020?<br>
     (average of total cases and of total deaths)
 
- 2. What features contribute most to being classified as above or below average over both 2020 and 2021?<br>
+ 2. What features contribute most to being classified as above or below average of years 2020 and 2021?<br>
     (average of total cases and of total deaths)
 
  3. What are the differences?
@@ -45,7 +45,7 @@ Database:  *United_States_COVID-19_Cases_and_Deaths_by_State_over_Time.csv*
 
 - Explore new cases and new deaths from COVID-19 by state over the years 2020 and 2021
 
-- Use the yearly statistics from this database in the analysis of other features in the vax_cases_death.csv database
+- Use the yearly statistics from this database in the analysis of other features in the vax_cases_death.csv database also
 
 - Database features are the new cases and the new deaths from COVID-19 and the states
 - Label columns are based on the means for the year 2020 and the means for the years 2020 and 2021 combined 
@@ -60,12 +60,12 @@ Database *vax_cases_death.csv*
 - Label columns are based on the means for the year 2020 and the means for the years 2020 and 2021 combined (from database United_States_COVID-19_Cases_and_Deaths_by_State_over_Time.csv)
 
 
-Imbalance:  *note that the classier set (labels) is NOT imbalanced*
+Imbalance:  *Note that the classier set (labels) is NOT imbalanced.*  This was verified by doing a values count on the label colummns.
 
 
 ## Finding the optimal model
 
-According to sklearn,the scikit-learn implementation differs from the original random forest conceptualization of each sample-sized decision tree voting for the best outcome.  In scikit-learn the ensemble learners outcome is averaged.  It is known that individual decision trees typically have high variance which cause overfitting.  The random forest algorithms of either voting or averaging tends to reduce the variance so that the randpm forest trees are less likely overfit the data.  By assessing the model results, parameters can be found which provide a predictive fit rather than an overfit. The model parameters which are explored to find an optimal model are as follows:<br>
+According to sklearn,the scikit-learn implementation differs from the original random forest conceptualization of randon forests in which each sample-sized decision tree votes for the best outcome.  In scikit-learn the ensemble learners' outcome is averaged.  It is known that individual decision trees typically have high variance which causes overfitting.  Either the voting or averaging algorithms tend to reduce the variance so that the randpm forest trees are less likely overfit the data.  By assessing the model results, parameters can be found which provide a predictive fit rather than an overfit. The model parameters which are explored to find an optimal model are as follows:<br>
 
 n_estimators=128<br>
 random_state=78<br>
@@ -95,8 +95,6 @@ oob_score = False or True<br><br><br>
 |  13 |  128  |  78  |  entropy  |  10  |  'sqrt'  |  0.0  |  True  | 
 |  14  |  128  |  78  |  gini  |  None  |  'sqrt'  |  0.5  |  False  |
 |  15  |  128  |  78  |  gini  |  None  |  'sqrt'  |  0.5  |  True   |
-|  16  |  128  |  78  |  entropy  |  None  |  'sqrt'  |  0.5  |  False  |  
-|  17 |  128  |  78  |  entropy  |  None  |  'sqrt'  |  0.5  |  True  |  
 
 <br><br>
 
@@ -104,31 +102,60 @@ oob_score = False or True<br><br><br>
 
 ### Cases and Deaths
 
-The approach is to create a label column with binary outcomes from the total cases and the total deaths and then to use a random forest classifer to analyze features which predict one or the other.  Here the binary outcome is that features result in an above average or a below average number of cases or deaths.
+The approach is to create a label column with binary outcomes from the total cases and the total deaths and then to use a random forest classifer to analyze features.  Here the binary outcome is that features result in an above average or a below average number of cases or deaths by:
 
-First, evaluate using the mean from 2020 found from the United_States_COVID-19_Cases_and_Deaths_by_State_over_Time database.
+- First, evaluating the mean from 2020 found from the United_States_COVID-19_Cases_and_Deaths_by_State_over_Time database.
 
-Second, evaluate using the mean from 2020 and 2021 found from the United_States_COVID-19_Cases_and_Deaths_by_State_over_Time database.
+- Second, evaluating the mean from 2020 and 2021 found from the United_States_COVID-19_Cases_and_Deaths_by_State_over_Time database.
 
-These means are used for feature analyses with both the United_States_COVID-19_Cases_and_Deaths_by_State_over_Time database and the vax_cases_death.csv database.
+These two means are used for feature analyses with both the United_States_COVID-19_Cases_and_Deaths_by_State_over_Time database and the vax_cases_death.csv database.  The following table illustrates the four label columns created:
 
+Table:  Label Column Outcomes
+
+|     |  Database 1  |  Database 2  |
+|:-------:|:-----------:|:-------------:|
+|  Cases  |  C1  |  C2  |
+|  Daeths  |  D1  |  D2  |
+
+Database 1:  United_States_COVID-19_Cases_and_Deaths_by_State_over_Time database.
+Database 2:  vax_cases_death database
+C1:  >= or < number of cases mean of 2020
+C2:  >= or < number of cases mean of 2020 and 2021
+D1:  >= or < number of deaths mean of 2020
+D2:  >= or < number of deaths mean of 2020 and 2021
 
 ## Model Results
 
-The model results are read into a PostgreSQL database for helping in analysis and presentations.<br>
+The model results are read into a PostgreSQL database for helping in analysis and presentations.
+
+The model results database has tables for holding the model input, statistics for the number of cases and the number of deaths, random forest feature importances, and other model results used in machine learning.<br>
 
 
 ## Displays of Results
 
 1.  Machine learning model performance optimization graph
 
-2.  Decision trees surface plot for two features:
-    What does the plot look like for the optimal model compared to a non-optimal model?
+2.  Visualizations using importance measures of features
 
-3.  Visualizations using importance measures of features
+3.  Others?
 
-4.  Others?
 
+## Results files
+
+The results of the random forest model can be found below:
+
+**optimal model** csv format files:
+
+rfinput_optimal.csv<br>
+mlsetstat_optimal.csv<br>
+rfimportance_optimal.csv<br>
+rfresult_optimal.csv<br>
+
+**analysis** csv format files:
+
+mlinputs_1.csv (C1 and D1 resuls)<br>
+mlinputs2.csv (C2 and D2 results)<br>
+analysis_output.csv (C1, D1, C2, and D2 results)<br>
 
 
 ## References:
