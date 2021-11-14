@@ -36,13 +36,13 @@ We hope to create two machine learning models, one for cases and one for deaths 
 
 ## Database Pipeline Demystification:
 
-The data is being downloaded from the CDC website into a PostGRES database, being managed by Sarah. From there, Sarah writes SQL code to perform joins, merges, and cleaning. The PostGRES database is connected to an Amazon Web Services database, and the csv files are stored in an S3 bucket. From there, the data cleaning script reads in those csv files using Pandas, which are then cleaned, and fed to the machine learning modeling script.
+The data is being downloaded from the CDC website into a PostGRES database, being managed by Sarah. From there, Sarah writes SQL code to perform joins, merges, and cleaning. The PostGRES database is connected to an Amazon Web Services database, and the csv files are stored in an S3 bucket. From there, the data cleaning script reads in those CSV files using Pandas, which are then cleaned, and fed to the machine learning modeling script.
 
 ------------------------------------------------------------------------------------------------------------------------
-# Segment Two: Exploratory Analysis
+# Segment Two: Exploration and Analysis
 
 ## Drew is Scraping Gender Data
-Expand
+Drew has been sick for most of the last week, and not available. Although his data is scraped, and possibly ready to merge, his the scraping and merging of features is an example of "further analysis", and is not strictly part of the minimum viable product, or deliverables for Segment Two. Merging his content will be part of classwork on Tuesday, November 16th, and should be available for review shortly afterward.
 
 ## Sarah is merging data sets, and importing Drew's Data
 Expand on details here
