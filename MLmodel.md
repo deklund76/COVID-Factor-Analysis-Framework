@@ -123,6 +123,9 @@ C1:  >= or < number of cases mean of 2020<br>
 C2:  >= or < number of cases mean of 2020 and 2021<br>
 D1:  >= or < number of deaths mean of 2020<br>
 D2:  >= or < number of deaths mean of 2020 and 2021<br>
+<br>
+The features used in the evaluation from Database 1 and Database 2 were described in the section on setting up the analysis.  The data preprocessing was to clean the data and create the label columns.  Splitting of the data into training and testing sets for Random Forest modeling used the default values in scikit-learn.
+
 
 ## Model Results
 
