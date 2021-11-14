@@ -51,6 +51,9 @@ Expand on details here
 
 Click [here](https://github.com/deklund76/project-one/blob/main/MLmodel.md ) for details on the random forest model and analysis, including data preprocessing, training, and testing. 
 
+## Final Dashboard Preliminary Description
+The final Dashboard will be made with Tableau, and will include multiple interactive graphs having to do with the inputs and outputs of the Machine Learning model. As the presentation aims for 10 minutes, the final format will be a story with roughly 5-20 pages.
+
 -----------------------------------------------------------------------------------------------------------------------------
 Google Slides link: (anyone with access can edit)
 https://docs.google.com/presentation/d/1Eti-Xp3HtNmAY58WrW7OXlPTRSwAcABQasO9jw3a4Ng/edit#slide=id.p
