@@ -49,7 +49,7 @@ Expand on details here
 
 ## Dan is cleaning the updated database, and updating the model
 
-Click [here](https://github.com/deklund76/project-one/blob/main/MLmodel.md ) for details on the random forest model and analysis.
+Click [here](https://github.com/deklund76/project-one/blob/main/MLmodel.md ) for details on the random forest model and analysis. 
 
 -----------------------------------------------------------------------------------------------------------------------------
 Google Slides link: (anyone with access can edit)
