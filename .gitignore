@@ -1,3 +1,37 @@
+# add config.py
+
+config.py
+
+# add other files
+
+ML_cases.csv
+ML_deaths.csv
+CleanedFile1.csv
+modifiedData1.csv
+AWStoLocal_plusML.ipynb
+Cases Deaths norm.xlsx
+cases_deaths_norm.csv
+Cases_sample.csv
+Cases_sample.xlsx
+cleaner_connection_AWS_to_Pandas.ipynb
+cleaner_connection_AWS_to_Spark.ipynb
+cleaner_connection_Local_to_Pandas.ipynb
+COVID-19_Vaccinations_in_the_United_States_Jurisdiction.csv
+DatabaseCleanerFile1_rev1.ipynb
+DatabaseCleanerFile1.ipynb
+exampleRandomForest.ipynb
+ML_pn_rev0.ipynb
+QuickDBD-export.pdf
+RandomForest_cases_1.ipynb
+RandomForest_deaths_1.ipynb
+S3_Postgres.ipynb
+United_States_COVID-19_Cases_and_Deaths_by_State_over_Time.csv
+United_States_COVID-19_Cases_and_Deaths_by_State_sorted.xlsx
+Vac_Sample.csv
+Vac_Sample.xlsx
+vaccinations_norm.csv
+vaccines.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
