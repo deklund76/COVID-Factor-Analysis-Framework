@@ -126,9 +126,7 @@ D2:  >= or < number of deaths mean of 2020 and 2021<br>
 
 ## Model Results
 
-The model results are read into a PostgreSQL database for helping in analysis and presentations.
-
-The model results database has tables for holding the model input, statistics for the number of cases and the number of deaths, random forest feature importances, and other model results used in machine learning.<br>
+The optimal model was found to be notebook 6 in the above table. The model results, for both optimal and non-optimal models, are read into a PostgreSQL database for helping in analysis and presentations.  The model results database has tables for holding the model input, statistics for the number of cases and the number of deaths, random forest feature importances, and other model results used in machine learning.<br>
 
 
 ## Displays of Results
