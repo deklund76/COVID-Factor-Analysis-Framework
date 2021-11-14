@@ -36,7 +36,7 @@ We hope to create two machine learning models, one for cases and one for deaths 
 
 ## Database Pipeline Demystification:
 
-The data is being downloaded from the CDC website into a PostGRES database, being managed by Sarah. From there, Sarah writes SQL code to perform joins, merges, and cleaning. The PostGRES database is connected to an Amazon Web Services database, and the csv files are stored in an S3 bucket. From there, the data cleaning script reads in those csv files using PySpark, which are then cleaned, and fed to the machine learning modeling script.
+The data is being downloaded from the CDC website into a PostGRES database, being managed by Sarah. From there, Sarah writes SQL code to perform joins, merges, and cleaning. The PostGRES database is connected to an Amazon Web Services database, and the csv files are stored in an S3 bucket. From there, the data cleaning script reads in those csv files using Pandas, which are then cleaned, and fed to the machine learning modeling script.
 
 ------------------------------------------------------------------------------------------------------------------------
 # Segment Two: Exploratory Analysis
@@ -49,7 +49,7 @@ Expand on details here
 
 ## Dan is cleaning the updated database, and updating the model
 
-Click [here](https://github.com/deklund76/project-one/blob/main/MLmodel.md ) for details on the random forest model and analysis. 
+Click [here](https://github.com/deklund76/project-one/blob/main/MLmodel.md ) for details on the random forest model and analysis, including data preprocessing, training, and testing. 
 
 -----------------------------------------------------------------------------------------------------------------------------
 Google Slides link: (anyone with access can edit)
