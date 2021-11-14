@@ -146,7 +146,7 @@ The results of the random forest model can be found below:
 
 **optimal model** csv format files:
 
-[rfinput_optimal.csv]( )<br>
+[rfinput_optimal.csv](https://github.com/deklund76/project-one/blob/ML_results_database/Resources/rfinput_optimal.csv )<br>
 [mlsetstat_optimal.csv](https://github.com/deklund76/project-one/blob/ML_results_database/Resources/mlsetstat_optimal.csv )<br>
 [rfimportance_optimal.csv](https://github.com/deklund76/project-one/blob/main/Resources/rfimportance_optimal.csv )<br>
 [rfresult_optimal.csv]( )<br>
