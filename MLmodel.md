@@ -108,21 +108,21 @@ The approach is to create a label column with binary outcomes from the total cas
 
 - Second, evaluating the mean from 2020 and 2021 found from the United_States_COVID-19_Cases_and_Deaths_by_State_over_Time database.
 
-These two means are used for feature analyses with both the United_States_COVID-19_Cases_and_Deaths_by_State_over_Time database and the vax_cases_death.csv database.  The following table illustrates the four label columns created:
+These two means are used for feature analyses with both the United_States_COVID-19_Cases_and_Deaths_by_State_over_Time database and the vax_cases_death.csv database.  The following table illustrates the four label columns created:<br><br>
 
-Table:  Label Column Outcomes
+**Table:  Label Column Outcomes**<br>
 
 |     |  Database 1  |  Database 2  |
 |:-------:|:-----------:|:-------------:|
 |  Cases  |  C1  |  C2  |
 |  Daeths  |  D1  |  D2  |
-
-Database 1:  United_States_COVID-19_Cases_and_Deaths_by_State_over_Time database.
-Database 2:  vax_cases_death database
-C1:  >= or < number of cases mean of 2020
-C2:  >= or < number of cases mean of 2020 and 2021
-D1:  >= or < number of deaths mean of 2020
-D2:  >= or < number of deaths mean of 2020 and 2021
+<br>
+Database 1:  United_States_COVID-19_Cases_and_Deaths_by_State_over_Time database<br>
+Database 2:  vax_cases_death database<br>
+C1:  >= or < number of cases mean of 2020<br>
+C2:  >= or < number of cases mean of 2020 and 2021<br>
+D1:  >= or < number of deaths mean of 2020<br>
+D2:  >= or < number of deaths mean of 2020 and 2021<br>
 
 ## Model Results
 
@@ -146,16 +146,16 @@ The results of the random forest model can be found below:
 
 **optimal model** csv format files:
 
-rfinput_optimal.csv<br>
-mlsetstat_optimal.csv<br>
-rfimportance_optimal.csv<br>
-rfresult_optimal.csv<br>
+[rfinput_optimal.csv]( )<br>
+[mlsetstat_optimal.csv]( )<br>
+[rfimportance_optimal.csv]( )<br>
+[rfresult_optimal.csv]( )<br>
 
 **analysis** csv format files:
 
-mlinputs_1.csv (C1 and D1 resuls)<br>
-mlinputs2.csv (C2 and D2 results)<br>
-analysis_output.csv (C1, D1, C2, and D2 results)<br>
+[mlinputs_1.csv]( ) (C1 and D1 resuls)<br>
+[mlinputs2.csv]( ) (C2 and D2 results)<br>
+[analysis_output.csv]( ) (C1, D1, C2, and D2 results)<br>
 
 
 ## References:
