@@ -45,7 +45,7 @@ The data is being downloaded from the CDC website into a PostGRES database, bein
 Drew has been sick for most of the last week, and not available. Although his data is scraped, and possibly ready to merge, his the scraping and merging of features is an example of "further analysis", and is not strictly part of the minimum viable product, or deliverables for Segment Two. Merging his content will be part of classwork on Tuesday, November 16th, and should be available for review shortly afterward.
 
 ## Sarah is merging data sets, and importing Drew's Data
-Expand on details here
+Sarah has continued to work on the Entity Relationship Diagram, and creating tables for use in the Machine Learning cleaning and modeling scripts. She has also handled merging the original CSV files into a single database. This involved preliminary data cleaning using SQL, as well as concatenating certain features. 
 
 ## Dan is cleaning the updated database, and updating the model
 
