@@ -124,6 +124,9 @@ C2:  >= or < number of cases mean of 2020 and 2021<br>
 D1:  >= or < number of deaths mean of 2020<br>
 D2:  >= or < number of deaths mean of 2020 and 2021<br>
 
+The features used in the evaluation from Database 1 and Database 2 were described in the section on setting up the analysis.  The data preprocessing was to clean the data and create the label columns.  Splitting of the data into training and testing sets for Random Forest modeling used the default values in scikit-learn.
+
+<br>
 ## Model Results
 
 The optimal model was found to be notebook 6 in the above table. The model results, for both optimal and non-optimal models, are read into a PostgreSQL database for helping in analysis and presentations.  The model results database has tables for holding the model input, statistics for the number of cases and the number of deaths, random forest feature importances, and other model results used in machine learning.<br>
