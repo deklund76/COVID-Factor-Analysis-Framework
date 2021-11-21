@@ -1,6 +1,6 @@
 # COVID19 Cases and Deaths Factor Analysis
 
-## Segment One: Direction
+## Direction
 ### Topic
 
 Our topic of choice is COVID-19 data exploration. Specifically, we are exploring the factors which most affect a machine learning model's ability to predict cases and deaths within a State. We hypothesize that factors with high predictive validity within machine learning modeling are likely to be predictive in the real world of risk factors within a State.
@@ -21,19 +21,19 @@ We hope to create two machine learning models, one for cases and one for deaths 
 
 The data is being downloaded from the CDC website into a PostGRES database, being managed by Sarah. From there, Sarah writes SQL code to perform joins, merges, and cleaning. The PostGRES database is connected to an Amazon Web Services database, and the csv files are stored in an S3 bucket. From there, the data cleaning script reads in those CSV files using Pandas, which are then cleaned, and fed to the machine learning modeling script.
 
-## Segment Two: Exploration and Analysis
+## Exploration and Analysis
 
-## Drew is Scraping Gender Data
+### Drew is Scraping Gender Data
 Drew has been sick for most of the last week, and not available. Although his data is scraped, and possibly ready to merge, his the scraping and merging of features is an example of "further analysis", and is not strictly part of the minimum viable product, or deliverables for Segment Two. Merging his content will be part of classwork on Tuesday, November 16th, and should be available for review shortly afterward.
 
-## Sarah is merging data sets, and importing Drew's Data
+### Sarah is merging data sets, and importing Drew's Data
 Sarah has continued to work on the Entity Relationship Diagram, and creating tables for use in the Machine Learning cleaning and modeling scripts. She has also handled merging the original CSV files into a single database. This involved preliminary data cleaning using SQL, as well as concatenating certain features. 
 
-## Dan is cleaning the updated database, and updating the model
+### Dan is cleaning the updated database, and updating the model
 
 Click [here](https://github.com/deklund76/project-one/blob/main/MLmodel.md ) for details on the random forest model and analysis, including data preprocessing, training, and testing. 
 
-## Final Dashboard Preliminary Description
+### Final Dashboard Preliminary Description
 The final Dashboard will be made with Tableau, and will include multiple interactive graphs having to do with the inputs and outputs of the Machine Learning model. As the presentation aims for 10 minutes, the final format will be a story with roughly 5-20 pages.
 
 -----------------------------------------------------------------------------------------------------------------------------
