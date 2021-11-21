@@ -1,14 +1,5 @@
 # project-one
 
-## Description of Communication Protocols: 
-
-For this project, Slack will be used to communicate between team members. Each day unless otherwise agreed upon, the team will convene on Slack at 7 p.m. for a standup meeting where each team member will state their progress for the day and any problems they've encountered as well as pose any questions they have to the team. Each Sunday, the following week's tasks will be assigned so that team members share an equal workload. Progress on the project will also be tracked asynchronously on a group Trello board outlined below:
-
-![trello_board](https://github.com/deklund76/project-one/blob/main/Resources/Trello.png)
-
-Tasks are listed according to the project rubric and color coded according to the role they fall under. Any other tasks or edits team members deem necessary for their assigned tasks will also be posted there. Team members are expected to update their tasks as they complete them so that team members can track each other's progress.
-
------------------------------------------------------
 Presentation: Mitchell 1st, Dan 2nd
 
 Github: Drew 1st, Sarah 2nd
