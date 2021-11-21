@@ -34,6 +34,8 @@ Google Slides link:
 
 [here](https://docs.google.com/presentation/d/1Eti-Xp3HtNmAY58WrW7OXlPTRSwAcABQasO9jw3a4Ng/edit#slide=id.p)
 
-Tableau Workbook:
+Tableau:
 
-This is available as a view-only link with a Tableau Online account (no trial necessary) [here](https://prod-useast-b.online.tableau.com/#/site/covid19casesanddeathsfactoranalysis/workbooks/287564?:origin=card_share_link)
+Workbook is available as a view-only link with a Tableau Online account (no trial necessary) [here](https://prod-useast-b.online.tableau.com/#/site/covid19casesanddeathsfactoranalysis/workbooks/287564?:origin=card_share_link)
+
+And slides [here](https://prod-useast-b.online.tableau.com/#/site/covid19casesanddeathsfactoranalysis/workbooks/288588?:origin=card_share_link)
