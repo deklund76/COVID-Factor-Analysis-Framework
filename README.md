@@ -30,5 +30,10 @@ Click [here](https://github.com/deklund76/project-one/blob/main/MLmodel.md ) for
 
 ## The product
 
-Google Slides link: (anyone with access can edit)
-https://docs.google.com/presentation/d/1Eti-Xp3HtNmAY58WrW7OXlPTRSwAcABQasO9jw3a4Ng/edit#slide=id.p
+Google Slides link:
+
+[here](https://docs.google.com/presentation/d/1Eti-Xp3HtNmAY58WrW7OXlPTRSwAcABQasO9jw3a4Ng/edit#slide=id.p)
+
+Tableau Workbook:
+
+This is available for viewing as a Tableau Workbook file on Tableau Public [here](https://github.com/deklund76/project-one/tree/main/Tableau_files)
