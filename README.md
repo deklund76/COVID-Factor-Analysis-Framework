@@ -19,12 +19,8 @@ We hope to create two machine learning models, one for cases and one for deaths 
 
 https://covid.cdc.gov/covid-data-tracker/#datatracker-home The CDC collects a lot of data, and organizes it into sets. Specifically the cases and deaths over time https://data.cdc.gov/Case-Surveillance/United-States-COVID-19-Cases-and-Deaths-by-State-o/9mfq-cb36, and the vaccination rate over time https://data.cdc.gov/Vaccinations/COVID-19-Vaccinations-in-the-United-States-Jurisdi/unsk-b7fc are our starter sets.
 
-#### Database Pipeline Demystification:
-
-The data is being downloaded from the CDC website into a PostGRES database. From there, SQL code performs joins, merges, and cleaning. The PostGRES database is connected to an Amazon Web Services database, and the CSV files are stored in an S3 bucket. From there, the data cleaning script reads in those CSV files using Pandas, which are then cleaned, and fed to the machine learning modeling script.
-
-### Database
-The initial data sets were merged into a single file for the machine learning progream to run on. Entity Relationship Diagram polishing has also been a major factor of the exploration phase. Preliminary data cleaning has been taken into account to increase portability and readability of the data. These steps have been performed in PostGRES using SQL. In addition to this, the database and datasets have been formatted such that they are accessible using Amazon Web Services. Maintenance and monitoring of these systems continues.
+### Database and Pipeline
+The data is being downloaded from the CDC website into a PostGRES database. From there, SQL code performs joins, merges, and cleaning. The PostGRES database is connected to an Amazon Web Services database, and the CSV files are stored in an S3 bucket.  From there, the data cleaning script reads in those CSV files using Pandas, which are then cleaned, and fed to the machine learning modeling script. Maintenance and monitoring of third party systems continues. The Entity Relationship Diagram is also part of the database programming work.
 
 ## The How
 
@@ -32,6 +28,7 @@ The initial data sets were merged into a single file for the machine learning pr
 
 Click [here](https://github.com/deklund76/project-one/blob/main/MLmodel.md ) for details on the random forest model and analysis, including data preprocessing, training, and testing. 
 
------------------------------------------------------------------------------------------------------------------------------
+## The product
+
 Google Slides link: (anyone with access can edit)
 https://docs.google.com/presentation/d/1Eti-Xp3HtNmAY58WrW7OXlPTRSwAcABQasO9jw3a4Ng/edit#slide=id.p
