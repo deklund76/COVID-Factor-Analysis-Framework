@@ -1,14 +1,5 @@
 # project-one
 
-Presentation: Mitchell 1st, Dan 2nd
-
-Github: Drew 1st, Sarah 2nd
-
-Machine Learning: Dan 1st, Drew 2nd
-
-Database Sarah 1st, Mitchell 2nd
-
-# Team members have drafted their project, including the following:
 ## ✓ Selected topic
 
 Our topic of choice is COVID-19 data exploration.
