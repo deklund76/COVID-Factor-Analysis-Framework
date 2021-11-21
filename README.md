@@ -36,4 +36,5 @@ Google Slides link:
 
 Tableau Workbook:
 
-This is available for viewing as a Tableau Workbook file on Tableau Public [here](https://github.com/deklund76/project-one/tree/main/Tableau_files)
+This is available for download as a Tableau Workbook file [here](https://github.com/deklund76/project-one/tree/main/Tableau_files)
+or as a view-only link [here](https://prod-useast-b.online.tableau.com/#/site/covid19casesanddeathsfactoranalysis/workbooks/287564?:origin=card_share_link)
