@@ -2,7 +2,7 @@
 
 ## ✓ Selected topic
 
-Our topic of choice is COVID-19 data exploration.
+Our topic of choice is COVID-19 data exploration. Specifically, we are exploring the factors which most affect a machine learning model's ability to predict cases and deaths within a State. We hypothesize that factors with high predictive validity within machine learning modeling are likely to be predictive in the real world of risk factors within a State.
 
 ## ✓ Reason why they selected their topic
 
