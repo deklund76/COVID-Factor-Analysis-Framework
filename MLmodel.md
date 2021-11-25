@@ -1,4 +1,4 @@
-### DRAFT
+
 
 # Random Forest Model
 
@@ -104,9 +104,9 @@ oob_score = False or True<br><br><br>
 
 The approach is to create a label column with binary outcomes from the total cases and the total deaths and then to use a random forest classifer to analyze features.  Here the binary outcome is that features result in an above average or a below average number of cases or deaths by:
 
-- First, evaluating the mean from 2020 found from the United_States_COVID-19_Cases_and_Deaths_by_State_over_Time database.
+- First, evaluating the mean from 2020 found from the United_States_COVID-19_Cases_and_Deaths_by_State_over_Time database (Database 1).
 
-- Second, evaluating the mean from 2020 and 2021 found from the United_States_COVID-19_Cases_and_Deaths_by_State_over_Time database.
+- Second, evaluating the mean from 2020 and 2021 found from the United_States_COVID-19_Cases_and_Deaths_by_State_over_Time database (Database 2).
 
 These two means are used for feature analyses with both the United_States_COVID-19_Cases_and_Deaths_by_State_over_Time database and the vax_cases_death.csv database.  The following table illustrates the four label columns created:<br><br>
 
@@ -124,12 +124,36 @@ C2:  >= or < number of cases mean of 2020 and 2021<br>
 D1:  >= or < number of deaths mean of 2020<br>
 D2:  >= or < number of deaths mean of 2020 and 2021<br>
 <br>
-The features used in the evaluation from Database 1 and Database 2 were described in the section on setting up the analysis.  The data preprocessing was to clean the data and create the label columns.  Splitting of the data into training and testing sets for Random Forest modeling used the default values in scikit-learn.
+The features used in the evaluation from Database 1 and Database 2 were described in the section on setting up the analysis.  The data preprocessing was to clean the data and create the label columns.  
+
+### Training and Testing
+
+Splitting of the data into training and testing sets for Random Forest modeling used the default values in scikit-learn.  The optimized model (notebook 6 above) was found using Database 1 in this training and testing manner.  It is then used to learn on Database 2.
 
 
 ## Model Results
 
-The optimal model was found to be notebook 6 in the above table. The model results, for both optimal and non-optimal models, are read into a PostgreSQL database for helping in analysis and presentations.  The model results database has tables for holding the model input, statistics for the number of cases and the number of deaths, random forest feature importances, and other model results used in machine learning.<br>
+The model results, for both optimal and non-optimal models, are read into a PostgreSQL database for helping in analysis and presentations.  The model results database has tables for holding the model input, statistics for the number of cases and the number of deaths, random forest feature importances, and other model results used in machine learning.
+
+Some results for the optimized model are given in the following table:<br><br>
+(scroll->)
+
+|  |CM_A0P0_cases|CM_A0P1_cases|CM_A1P0_cases|CM_A1P1_cases|CM_A0P0_death|CM_A0P1_death|CM_A1P0_death|CM_A1P1_death|acc_score_cases|acc_score_death|
+|:-:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-------------:|:-------------:|
+|Database 1|1448 | 663	|360	|2096	|1448	|663	|360	|2096	|0.776001752	|0.776001752|
+|Database 1|2770	|246	|298	|1253	|2496	|295	|587	|1189	|0.880884607	|0.806875411|
+|Database 2|71	|11	|0	|516	|170	|10	|3	|415	|0.981605351	|0.97826087|
+|Database 2|245	|4	|21	|328	|271	|9	|38	|280	|0.95819398	|0.921404682|
+<br><br>
+
+These are parameters from the confusion matrix and accuracy scores.  Here, A is for Actual and P is for Predicted.  As an example, CM_A0P0_cases means that for the results on the cases database the Actual label is 0 and the Predicted lable is 0, CM_A0P1_cases means that the Actual label is 0 and the Predicted label is 1, etc. From these results it can be seen that the optimized model performed very well for both cases and deaths from Database 1 and Database 2.
+
+### Appropriate Predictive Value
+
+The appropriate predictive value is precision.  This is because precision answers the question:  "The test for COVID-19 came back positive.  How likely is it that the test is correct?"  Here precision is defined as:
+
+(True Positive)/(True Positive + False Positive)
+
 
 
 ## Displays of Results
@@ -138,7 +162,6 @@ The optimal model was found to be notebook 6 in the above table. The model resul
 
 2.  Visualizations using importance measures of features
 
-3.  Others?
 
 
 ## Results files
