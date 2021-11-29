@@ -39,3 +39,5 @@ Tableau:
 Workbook is available as a view-only link with a Tableau Online account (no trial necessary) [here](https://prod-useast-b.online.tableau.com/#/site/covid19casesanddeathsfactoranalysis/workbooks/287564?:origin=card_share_link)
 
 And slides [here](https://prod-useast-b.online.tableau.com/#/site/covid19casesanddeathsfactoranalysis/workbooks/288588?:origin=card_share_link)
+
+And the notes for the presentation [here](https://github.com/deklund76/project-one/blob/main/PresentationNotes.md)
