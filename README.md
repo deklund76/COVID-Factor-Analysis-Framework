@@ -28,7 +28,7 @@ The data is being downloaded from the CDC website into a PostGRES database. From
 
 Click [here](https://github.com/deklund76/project-one/blob/main/MLmodel.md ) for details on the random forest model and analysis, including data preprocessing, training, and testing. 
 
-## The product
+## The Product
 
 Google Slides link:
 
@@ -41,3 +41,11 @@ Workbook is available as a view-only link with a Tableau Online account (no tria
 And slides [here](https://prod-useast-b.online.tableau.com/#/site/covid19casesanddeathsfactoranalysis/workbooks/288588?:origin=card_share_link)
 
 And the notes for the presentation [here](https://github.com/deklund76/project-one/blob/main/PresentationNotes.md)
+
+## The Takeaway
+
+✓ Result of analysis
+
+✓ Recommendation for future analysis
+
+✓ Anything the team would have done differently
