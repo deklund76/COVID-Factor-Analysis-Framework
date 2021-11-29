@@ -44,8 +44,14 @@ And the notes for the presentation [here](https://github.com/deklund76/project-o
 
 ## The Takeaway
 
-✓ Result of analysis
+### Result of analysis
 
-✓ Recommendation for future analysis
+Our analysis is more a model for future features to be arrayed on than meaningful in and of itself. The model creates an ordered list of how much each feature contributes to the overall prediction of whether a state's cases and deaths are above or below average.
 
-✓ Anything the team would have done differently
+### Recommendation for future analysis
+
+The recommendation we have for future analysis is adding features of interest for the model to evaluate. This would produce an ordered list of the importance of various features merged in when compared with each other. This would be useful for finding which features are the most important to focus on when attempting covid prevention.
+
+### Anything the team would have done differently
+
+We would have liked to rename the repo, and organized the GitHub better. We would also have liked to get the web scraped data merged in. Many of the things we would have liked to do weren't due to mistakes in the process however, but due to running out of time. The processes we set up worked well for us, and things ran smoothly. There were no problems to speak of in the workflow. One unforseen quarantine was the extent of our unanticipated problems.
