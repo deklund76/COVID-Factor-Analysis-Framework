@@ -1,5 +1,9 @@
 Opening & Why:
-M: "..."
+Hello and opening lighthearted mood setting
+How we chose
+What we chose
+Why we chose it
+Basic orientation of the project
 
 Database & Pipeline:
 Slide: Data Source
@@ -45,7 +49,9 @@ Slide:  Model Results
 - Administered becomes more important over time
 
 Next steps:
-M:"..."
+What is the applicability of what we have right now
+What could what we have now be adapted for
+What else would be useful in the model
 
 Scraping
 Dr:"..., ..."
