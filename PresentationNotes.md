@@ -2,7 +2,25 @@ Opening & Why:
 M: "..."
 
 Database & Pipeline:
-S:"..., ..."
+Slide: Data Source
+•	Downloaded two datasets from the CDC website
+•	Vaccination rates over time
+•	Cases and Deaths over time
+
+Slide: Database Pipeline
+•	A PostGRES database was created and connected to an Amazon Web Services database. 
+•	The datasets were stored in an S3 bucket.
+•	Two tables were created in PostGRES. A merge was performed to create a dataset with the vaccination data and cases and deaths for the machine learning modeling.
+
+Slide: Vaccination table
+•	Example of table and data
+
+Slide: Cases_Deaths table
+•	Example of table and data
+
+Slide: ERD 
+•	Visual of ERD
+•	Concat is the created field; primary key; one to one relationship
 
 Model & results:
 
