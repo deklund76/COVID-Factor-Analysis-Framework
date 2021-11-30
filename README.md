@@ -17,7 +17,11 @@ We hope to create two machine learning models, one for cases and one for deaths 
 
 ### Source data
 
+#### Via Download
 https://covid.cdc.gov/covid-data-tracker/#datatracker-home The CDC collects a lot of data, and organizes it into sets. Specifically the cases and deaths over time https://data.cdc.gov/Case-Surveillance/United-States-COVID-19-Cases-and-Deaths-by-State-o/9mfq-cb36, and the vaccination rate over time https://data.cdc.gov/Vaccinations/COVID-19-Vaccinations-in-the-United-States-Jurisdi/unsk-b7fc are our starter sets.
+
+#### Via Webscraping
+https://www.genderscilab.org/gender-and-sex-in-covid19 Harvard's Gender Sci Lab is a collaborative, interdisciplinary research lab dedicated to generating concepts, methods, and theories for scientific research on sex and gender. They created a Covid-19 Sex/Gender data tracker to report weekly and cumulative US state-level gender/sex-disaggregated COVID-19 cases and fatality data from mid-April to the present day, manually extracted each week from publicly-available state public health departments. 
 
 ### Database and Pipeline
 The data is being downloaded from the CDC website into a PostGRES database. From there, SQL code performs joins, merges, and cleaning. The PostGRES database is connected to an Amazon Web Services database, and the CSV files are stored in an S3 bucket.  From there, the data cleaning script reads in those CSV files using Pandas, which are then cleaned, and fed to the machine learning modeling script. Maintenance and monitoring of third party systems continues. The Entity Relationship Diagram is also part of the database programming work.
