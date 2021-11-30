@@ -32,6 +32,10 @@ The data is being downloaded from the CDC website into a PostGRES database. From
 
 Click [here](https://github.com/deklund76/project-one/blob/main/MLmodel.md ) for details on the random forest model and analysis, including data preprocessing, training, and testing. 
 
+### Webscraping
+
+Data was scraped from Harvard's Gender Sci Lab Covid-19 Sex/Gender data tracker using Beautiful Soup and an automated Chrome web browser created with Splinter.
+
 ## The Product
 
 Google Slides link:
