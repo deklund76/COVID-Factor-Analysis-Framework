@@ -49,8 +49,11 @@ Slide:  Model Results
 - Administered becomes more important over time
 
 Next steps:
+
 What is the applicability of what we have right now
+
 What could what we have now be adapted for
+
 What else would be useful in the model
 
 Scraping
