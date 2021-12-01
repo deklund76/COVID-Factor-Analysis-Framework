@@ -1,8 +1,13 @@
 Opening & Why:
+
 Hello and opening lighthearted mood setting
+
 How we chose
+
 What we chose
+
 Why we chose it
+
 Basic orientation of the project
 
 Database & Pipeline:
