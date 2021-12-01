@@ -54,4 +54,34 @@ What could what we have now be adapted for
 What else would be useful in the model
 
 Scraping
-Dr:"..., ..."
+
+
+Slide: The Future Finding more data sources
+
+- As Dan has demonstrated, our model works well with vaccination data.
+- The recommendation we have for future analysis is adding features of interest for the model to evaluate.
+- This means more data sources with information on said features and covid.
+- More detailed data faces a myriad of issues:
+  * Not all states track all demographic information for cases/deaths e.g. Alabama
+  * Master datasets with more detailed information require the ability to process tables with millions of rows.
+  * Working with said data is computationally expensive
+
+Slide: Solution: Webscraping!
+
+- A variety of projects from many other organizations have already done the work of "curating" the data
+- Harvard's Gender Sci Lab is one example.
+- The data is displayed on their tracker, but not downloadable, thus we scrape it.
+- This is challenging: URL to data source for display must be found on website
+- Scraping script must be tailored to each dataset due to the nature of HTML, this can be complicated.
+- This can be a lot of data to scrape!
+
+Slide: Lessons Learned: DON'T READ INTO MEMORY!
+
+- Don't read into memory! This almost melted my computer and it doesn't work.
+- Our design and development process was sound, but time simply didn't allow for more features.
+- The only unanticipated issue was when I had a close contact and had to be quarantined without accdss to a computer.
+- This ^ supported our model in the end since I was vaccinated and didn't become a COVID case.
+
+Slide: THANK YOU!
+
+~FIN~
