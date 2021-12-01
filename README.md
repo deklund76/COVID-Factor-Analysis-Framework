@@ -24,7 +24,7 @@ https://covid.cdc.gov/covid-data-tracker/#datatracker-home The CDC collects a lo
 https://www.genderscilab.org/gender-and-sex-in-covid19 Harvard's Gender Sci Lab is a collaborative, interdisciplinary research lab dedicated to generating concepts, methods, and theories for scientific research on sex and gender. They created a Covid-19 Sex/Gender data tracker to report weekly and cumulative US state-level gender/sex-disaggregated COVID-19 cases and fatality data from mid-April to the present day, manually extracted each week from publicly-available state public health departments. 
 
 ### Database and Pipeline
-The data is being downloaded from the CDC website into a PostGRES database. From there, SQL code performs joins, merges, and cleaning. The PostGRES database is connected to an Amazon Web Services database, and the CSV files are stored in an S3 bucket.  From there, the data cleaning script reads in those CSV files using Pandas, which are then cleaned, and fed to the machine learning modeling script. Maintenance and monitoring of third party systems continues. The Entity Relationship Diagram is also part of the database programming work.
+The data was downloaded from the CDC website into a PostGRES database. From there, SQL code performs joins, merges, and cleaning. The PostGRES database is connected to an Amazon Web Services database, and the CSV files are stored in an S3 bucket.  From there, the data cleaning script reads in those CSV files using Pandas, which are then cleaned, and fed to the machine learning modeling script. Maintenance and monitoring of third party systems continues. The Entity Relationship Diagram is also part of the database programming work.
 
 ## The How
 
